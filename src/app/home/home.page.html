@@ -1,6 +1,7 @@
 <ion-header>
   <ion-toolbar color="light">
-    <ion-title>Examen Bimestral de TE, Chateando...</ion-title>
+    <ion-title>Examen Bimestral de TE</ion-title>
+    <ion-title>Chateando...</ion-title>
     <ion-buttons slot="end">
       <ion-button fill="clear" (click)="logout()" color="danger">
         <ion-icon name="log-out" slot="icon-only"></ion-icon>
@@ -36,14 +37,13 @@
       <ion-col size="3" class="ion-align-items-end" float-right>
         <ion-button expand="block" fill="clear" color="primary" [disabled]="newMsg === ''"
           class="msg-btn" (click)="sendMessage()" >
-          <ion-icon name="send-outline" style="background-color: white;"></ion-icon>
+          <ion-icon name="send" ></ion-icon>
         </ion-button>
       </ion-col>
       <ion-col size="3" class="ion-align-items-end" float-right>
         <ion-button expand="block" fill="clear" color="primary" [disabled]="newMsg === ''"
           class="msg-btn" (click)="sendMessage()" >
-          <ion-icon name="image-outline"style="background-color: white;"></ion-icon>
-        </ion-button>
+          <ion-icon name="chatbox-ellipses-outline"></ion-icon>        </ion-button>
       </ion-col>
     </ion-row>
   </ion-toolbar>
